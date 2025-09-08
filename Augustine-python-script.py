@@ -51,8 +51,8 @@ print("cities:", list(city_data.keys()))
 # Print region of abuja
 print("Region of Abuja:", city_data["Abuja"]["region"])
 #Print total population
-# total_population = sum(city_data["population"] for city in city_data.values())
-# print("Total population:", total_population)
+total_population = sum(city["population"] for city in city_data.values())
+print("Total population:", total_population)
 
 
 # ==========================================================
@@ -201,4 +201,5 @@ except ValueError:
 except ZeroDivisionError:
     print("Error: Cannot divide by zero!")
 finally:
+
     print("Calculation completed")
