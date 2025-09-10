@@ -10,9 +10,9 @@ cordinate = (6.5244, 3.3792)
 is_capital = False
 
 print('City:', city_name, 'type:', type(city_name))
-print('City:', population, 'type:', type(population))
-print('City:', cordinate, 'type:', type(cordinate))
-print('City:', is_capital, 'type:', type(is_capital))
+print('Population:', population, 'type:', type(population))
+print('Cordinate:', cordinate, 'type:', type(cordinate))
+print('is_capital:', is_capital, 'type:', type(is_capital))
 
 area = 1000
 population_density = population/area
@@ -41,7 +41,7 @@ city_data = {
     "Kano":{"population": 4000000, "region":"Northwest"}
 }
 # add new city
-city_data["Enugu"]={"poulation": 722000, "region": "southeast"}
+city_data["Enugu"]={"population": 722000, "region": "southeast"}
 print(city_data)
 # update lagos location
 city_data["Lagos"]["population"] = 16000000
@@ -203,3 +203,4 @@ except ZeroDivisionError:
 finally:
 
     print("Calculation completed")
+
